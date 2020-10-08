@@ -18,13 +18,12 @@ if (isset($_GET['sample']) && $_GET['sample'] != "" &&
 
 //        $currentTimeStamp = date("F j, Y \a\t g:ia"); // Timestamp created on database server
 
-        if (doPDOSend(
-            "INSERT INTO activation (sample, audio, visual, retrobitId) VALUES (:sample, :audio, :visual, :retrobitId)",
-            array(':sample' => $sample, 'audio' => $audio, 'visual' => $visual, 'retrobitId' => $retrobitId),
-            $db) -> rowCount() > 0)
-        {   echo("<div id='melding'>Sample: $sample Audio: $audio Visual $visual</div>");
+        if (doPDOSend("INSERT INTO activation (sample, audio, visual, retrobitId) VALUES (:sample, :audio, :visual, :retrobitId)",
+            $db, array(':sample' => $sample, 'audio' => $audio, 'visual' => $visual, 'retrobitId' => $retrobitId)
+                ) -> rowCount() > 0)
+        {   echo("<div id='notice'>Sample: $sample Audio: $audio Visual $visual</div>");
         } else {
-            echo "<div id='melding'>Failure!</div>";
+            echo "<div id='notice'>Failure!</div>";
         }
     }
 } else {

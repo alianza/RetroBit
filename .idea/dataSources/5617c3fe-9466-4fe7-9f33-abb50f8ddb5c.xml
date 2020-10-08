@@ -1098,34 +1098,84 @@
       <Position>6</Position>
       <DataType>int(11)|0s</DataType>
     </column>
-    <key id="346" parent="338" name="PRIMARY">
+    <column id="346" parent="338" name="alert_repeat">
+      <Position>7</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="347" parent="338" name="sound_requency">
+      <Position>8</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="348" parent="338" name="sound_length">
+      <Position>9</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="349" parent="338" name="visual_color">
+      <Position>10</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="350" parent="338" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="347" parent="339" name="id">
+    <column id="351" parent="339" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="348" parent="339" name="audio">
+    <column id="352" parent="339" name="name">
       <Position>2</Position>
-      <DataType>tinyint(1)|0s</DataType>
+      <DataType>varchar(128)|0s</DataType>
       <NotNull>1</NotNull>
+      <DefaultExpression>&apos;RetroBit&apos;</DefaultExpression>
     </column>
-    <column id="349" parent="339" name="visual">
+    <column id="353" parent="339" name="audio">
       <Position>3</Position>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="350" parent="339" name="threshold">
+    <column id="354" parent="339" name="visual">
       <Position>4</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="355" parent="339" name="threshold">
+      <Position>5</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>500</DefaultExpression>
     </column>
-    <key id="351" parent="339" name="PRIMARY">
+    <column id="356" parent="339" name="alert_repeat">
+      <Position>6</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>5</DefaultExpression>
+    </column>
+    <column id="357" parent="339" name="sound_frequency">
+      <Position>7</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>2000</DefaultExpression>
+    </column>
+    <column id="358" parent="339" name="sound_length">
+      <Position>8</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>250</DefaultExpression>
+    </column>
+    <column id="359" parent="339" name="visual_color">
+      <Position>9</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>16777215</DefaultExpression>
+    </column>
+    <key id="360" parent="339" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>

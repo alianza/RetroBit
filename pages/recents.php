@@ -1,48 +1,20 @@
-<h2>Past Activations</h2>
+<h2>Recent Activations</h2>
 
 <div class="cards_container">
+
 <?php
 
-    include_once("../dbconfig.php");
+//    include_once("../dbconfig.php");
 
-    try {
-        $sql = "SELECT * FROM (SELECT * FROM activation ORDER BY id DESC LIMIT 10) Var1 ORDER BY id DESC";
-        $stmt = $db->prepare($sql);
-        $stmt->execute();
-
-    } catch (PDOException $e) {
-
-        echo("<div id='melding'>");
-
-        echo $e->GetMessage();
-
-        echo("</div>");
-
-    }
+    $stmt = doPDOGetStmt("SELECT * FROM (SELECT * FROM activation ORDER BY id DESC LIMIT 10) Var1 ORDER BY id DESC"
+                            , $db, null);
 
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-
-        $id = $row['id'];
-        $time = $row['time'];
-        $sample = $row['sample'];
-        $audio = $row['audio'];
-        $visual = $row['visual'];
-
-        echo ("
-        <form class='card' action='index.php?page=activation&id=$id' method='post'>
-        
-            <span>#$id</span>
-
-            <span>At: $time</span>
-                        
-            <a href='#' onclick='this.closest(\"form\").submit(); return false;'>Open</a>
-                    
-        </form>");
-
+        displayActivation($row);
     }
 
     if ($stmt->rowCount() == 0) {
-        echo("</div><div id='melding'>No activations yet...</div>");
+        echo("</div><div id='notice'>No activations yet...</div>");
     }
 
 ?>

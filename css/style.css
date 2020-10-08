@@ -60,6 +60,8 @@ body {
 
 /*END FOOTER*/
 
+/*BEGIN CARDS*/
+
 .card {
     box-shadow: 0 0 5px rgba(0, 0, 0, .5);
     padding: 1em;
@@ -68,7 +70,6 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    transition: box-shadow .5s;
 }
 
 .card:last-of-type {
@@ -95,4 +96,97 @@ body {
     width: 100%;
 }
 
+/*END CARDS*/
 
+/*BEGIN CONFIG DETAILS*/
+
+.config .field {
+    display: inline-block;
+    padding: .5em;
+}
+
+.config form {
+    padding: 0 1em 1em;
+}
+
+.config details {
+    border-bottom: 2px solid #333333;
+}
+
+.config details[open] summary ~ * {
+    animation: sweep .25s ease-in-out;
+}
+
+.config summary {
+    margin: 1em;
+    cursor: pointer;
+    transition: transform 0.25s;
+    font-size: 24px;
+    text-align: left;
+}
+
+.config summary:hover {
+    transform: scale(1.05);
+    transition: all 0.1s;
+}
+
+.config summary:active {
+    opacity: 0.5;
+    transform: scale(1);
+    transition: all 0.1s;
+}
+
+.config summary:focus {
+    outline: none;
+}
+
+/* FAQ Details Animation */
+.config details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+    /*0%    {opacity: 0; margin-right: -80vw; margin-left: 80vw}*/
+    /*100%  {opacity: 1; margin-right: 0px; margin-left: 0px}*/
+    0%    {opacity: 1; transform: translate(-100vw, 0)}
+    100%  {opacity: 1; transform: translate(0, 0)}
+}
+
+/*END CONFIG DETAILS*/
+
+/*BEGIN GENERAL STYLES*/
+
+input[type='submit'] {
+    background-color: #f9b000;
+    box-shadow: #333333 0 0 0 1px;
+    border: none;
+    padding: .5em;
+    border-radius: .2em;
+    cursor: pointer;
+    transition: transform .35s;
+}
+
+input[type='submit']:hover {
+    transition: transform .1s;
+    transform: scale(1.1);
+}
+
+input[type='submit']:active {
+    outline: none;
+    transform: scale(1);
+}
+
+input[type='submit']:focus {
+    outline: none;
+}
+
+#notice {
+    width: 35%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1em;
+    border-radius: .5em;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+}
+
+/*END GENERAL STYLES*/

@@ -1,6 +1,6 @@
 <?php
 
-    include_once("../dbconfig.php");
+//    include_once("../dbconfig.php");
 
     echo("<div id='stopRefresh'></div>");
 
@@ -9,7 +9,7 @@
 
         try {
 
-            $result = doPDOGet("SELECT * FROM activation WHERE id = :id", array(':id' => $id), $db);
+            $result = doPDOGet("SELECT * FROM activation WHERE id = :id",$db, array(':id' => $id));
 
             $id = $result['id'];
             $time = $result['time'];
@@ -27,9 +27,9 @@
             
                 <span id='time'>Time: $time</span>
                 
-                <span id='audio'>Audio: " . ($audio = 1 ? 'Yes' : 'No') . "</span>
+                <span id='audio'>Audio: " . ($audio == 1 ? 'Yes' : 'No') . "</span>
                 
-                <span id='visual'>Visual: " . ($visual = 1 ? 'Yes' : 'No') . "</span>
+                <span id='visual'>Visual: " . ($visual == 1 ? 'Yes' : 'No') . "</span>
                 
                 <span id='sample'>Sample: $sample</span>
                 
@@ -41,7 +41,7 @@
 
         } catch (PDOException $e) {
 
-            echo("<div id='melding'>");
+            echo("<div id='notice'>");
 
             echo $e->getMessage();
 

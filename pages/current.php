@@ -2,22 +2,10 @@
 
 <?php
 
-include_once("../dbconfig.php");
+//include_once("../dbconfig.php");
 
-try {
-    $sql = "SELECT * FROM `activation` WHERE DATE_SUB(NOW(), INTERVAL 1 MINUTE) < time";
-    $stmt = $db->prepare($sql);
-    $stmt->execute();
+$stmt = doPDOGetStmt("SELECT * FROM `activation` WHERE DATE_SUB(NOW(), INTERVAL 1 MINUTE) < time", $db, null);
 
-} catch (PDOException $e) {
-
-    echo("<div id='melding'>");
-
-    echo $e->GetMessage();
-
-    echo("</div>");
-
-}
 
 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 
@@ -27,8 +15,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
     $audio = $row['audio'];
     $visual = $row['visual'];
 
-    echo " 
-     
+    echo (" 
      <form class='card'  action='index.php?page=activation&id=$id' method='post'>
         
                 <span>#$id</span>
@@ -37,12 +24,12 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                 
                 <a href='#' onclick='this.closest(\"form\").submit(); return false;'>Open</a>
                     
-        </form>";
+        </form>");
 
 }
 
 if ($stmt->rowCount() == 0) {
-    echo("</div><div id='melding'>No current activations...</div>");
+    echo("</div><div id='notice'>No current activations...</div>");
 }
 
 ?>

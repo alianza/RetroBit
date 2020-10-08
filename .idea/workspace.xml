@@ -4,7 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="129d0686-e7d1-4637-9893-0682b2c9e670" name="Default Changelist" comment="" />
+    <list default="true" id="129d0686-e7d1-4637-9893-0682b2c9e670" name="Default Changelist" comment="Added config, updated everything">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/RetroBit server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RetroBit server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5617c3fe-9466-4fe7-9f33-abb50f8ddb5c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5617c3fe-9466-4fe7-9f33-abb50f8ddb5c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbconfig.php" beforeDir="false" afterPath="$PROJECT_DIR$/dbconfig.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/activation.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/activation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/activations.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/activations.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/current.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/current.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/deleteActivation.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/deleteActivation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/recents.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/recents.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postActivation.php" beforeDir="false" afterPath="$PROJECT_DIR$/postActivation.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,8 +41,12 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3" />
   <component name="ProjectId" id="1hrXUOZcdLKb6DJ6TymN2H34JY3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="abbreviatePackageNames" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -31,28 +56,42 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
     <property name="database.data.extractors.current.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pages" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Arduino/LED_STRIP_SOUND_LEVELS_CONNECTED" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Xamp Dir\RetroBit server\lib" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\Xamp Dir\RetroBit server\pages" />
       <recent name="C:\xampp\htdocs\Xamp Dir\RetroBit server\img" />
       <recent name="C:\xampp\htdocs\Xamp Dir\RetroBit server" />
       <recent name="C:\xampp\htdocs\Xamp Dir" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Xamp Dir\RetroBit server\lib" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -69,12 +108,17 @@
       <workItem from="1600770390277" duration="146000" />
       <workItem from="1600770560939" duration="7878000" />
       <workItem from="1601368801986" duration="37483000" />
-      <workItem from="1601992322437" duration="2626000" />
+      <workItem from="1601992322437" duration="2721000" />
+      <workItem from="1602172901157" duration="15296000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added config, updated everything" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added config, updated everything" />
   </component>
   <component name="WindowStateProjectService">
     <state x="475" y="55" key="#PHP" timestamp="1600773724118">
@@ -101,30 +145,51 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1601470473418" />
+    <state x="653" y="191" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#function0" timestamp="1602176642719">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="653" y="191" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#function0/0.0.1536.834@0.0.1536.834" timestamp="1602176642719" />
+    <state x="383" y="4" key="CommitChangelistDialog2" timestamp="1602196518049">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="383" y="4" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1602196518049" />
     <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1601372147082">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="254" height="195" key="DatabaseViewActions_Filter/0.0.1536.824@0.0.1536.824" timestamp="1601372147081" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1601403349829">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="549" y="169" key="FileChooserDialogImpl" timestamp="1602193065673">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601403349829" />
-    <state width="1024" height="162" key="GridCell.Tab.0.bottom" timestamp="1601914692777">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="549" y="169" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1602193065673" />
+    <state x="635" y="315" key="Github.ShareDialog" timestamp="1601998087271">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="635" y="315" key="Github.ShareDialog/0.0.1536.834@0.0.1536.834" timestamp="1601998087271" />
+    <state x="490" y="122" key="Github.UntrackedFilesDialog" timestamp="1601998098588">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="490" y="122" key="Github.UntrackedFilesDialog/0.0.1536.834@0.0.1536.834" timestamp="1601998098588" />
+    <state width="1145" height="123" key="GridCell.Tab.0.bottom" timestamp="1602195619499">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1024" height="162" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601914692777" />
-    <state width="1024" height="162" key="GridCell.Tab.0.center" timestamp="1601914692777">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1145" height="123" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1602195619499" />
+    <state width="1145" height="123" key="GridCell.Tab.0.center" timestamp="1602195619499">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1024" height="162" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601914692777" />
-    <state width="1024" height="162" key="GridCell.Tab.0.left" timestamp="1601914692777">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1145" height="123" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1602195619499" />
+    <state width="1145" height="123" key="GridCell.Tab.0.left" timestamp="1602195619499">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1024" height="162" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601914692777" />
-    <state width="1024" height="162" key="GridCell.Tab.0.right" timestamp="1601914692777">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1145" height="123" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1602195619499" />
+    <state width="1145" height="123" key="GridCell.Tab.0.right" timestamp="1602195619499">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1024" height="162" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601914692777" />
+    <state width="1145" height="123" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1602195619499" />
     <state width="189" height="457" key="HiddenNamespacesPopup" timestamp="1601372222368">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -133,22 +198,37 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="561" y="135" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1601470190413" />
-    <state x="604" y="335" key="NewPhpFileDialog" timestamp="1601920797023">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="604" y="339" key="NewPhpFileDialog" timestamp="1602173616087">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="604" y="335" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1601920797023" />
-    <state x="668" y="353" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1601912470735">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="604" y="339" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1602173616087" />
+    <state x="277" y="62" key="SettingsEditor" timestamp="1602175434739">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1602175434739" />
+    <state x="668" y="357" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1602193451800">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="668" y="353" key="com.intellij.database.run.ParametersPanel.Standalone/0.0.1536.824@0.0.1536.824" timestamp="1601912470735" />
+    <state x="668" y="357" key="com.intellij.database.run.ParametersPanel.Standalone/0.0.1536.834@0.0.1536.834" timestamp="1602193451800" />
     <state x="612" y="115" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1601471501179">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="612" y="115" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1601471501179" />
-    <state x="478" y="145" width="579" height="534" key="find.popup" timestamp="1601924828294">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="290" y="255" width="707" height="666" key="dock-window-1" timestamp="1602193602709">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="290" y="255" width="707" height="666" key="dock-window-1/0.0.1536.834@0.0.1536.834" timestamp="1602193602709" />
+    <state x="1109" y="0" width="434" height="840" key="dock-window-2" timestamp="1602193602710">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="1109" y="0" width="434" height="840" key="dock-window-2/0.0.1536.834@0.0.1536.834" timestamp="1602193602710" />
+    <state x="234" y="58" width="1040" height="691" key="find.popup" timestamp="1602195443571">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="478" y="145" width="579" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1601924828294" />
+    <state x="234" y="58" width="1040" height="691" key="find.popup/0.0.1536.834@0.0.1536.834" timestamp="1602195443571" />
     <state x="360" y="95" key="new project wizard" timestamp="1601464793734">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -157,14 +237,15 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="545" y="184" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1601373284411" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1601919769475">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="425" y="189" key="run.anything.popup" timestamp="1602177581591">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1601919769475" />
-    <state x="431" y="147" width="672" height="687" key="search.everywhere.popup" timestamp="1601997988880">
+    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1602177581591" />
+    <state x="431" y="147" width="672" height="687" key="search.everywhere.popup" timestamp="1602195622757">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1601924823828" />
-    <state x="431" y="147" width="672" height="687" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1601997988880" />
+    <state x="431" y="147" width="672" height="687" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1602195622757" />
   </component>
 </project>
