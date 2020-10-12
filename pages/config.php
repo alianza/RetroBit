@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (isset($_POST['alert_repeat'])) {$alert_repeat = $_POST['alert_repeat'];}
         if (isset($_POST['sound_frequency'])) {$sound_frequency = $_POST['sound_frequency'];}
         if (isset($_POST['sound_length'])) {$sound_length = $_POST['sound_length'];}
-        if (isset($_POST['visual_color'])) {$visual_color = $_POST['visual_color'];}
+        if (isset($_POST['visual_color'])) {$visual_color = hexdec($_POST['visual_color']);}
 
         if (isset($_POST['submit'])) {
 
@@ -87,8 +87,8 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
          </div>
          <div class='field'>    
             <label for='visual_color'>Visual alert color</label>
-            <input type='number' id='visual_color' name='visual_color' value='{$row["visual_color"]}'>
-         </div>     
+            <input type='color' id='visual_color' name='visual_color' value='" . "#".substr("000000".dechex($row["visual_color"]),-6) . "'>
+         </div>      
          
             <input type='hidden' name='id' value='{$row["id"]}'>
             <br>

@@ -4,32 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="129d0686-e7d1-4637-9893-0682b2c9e670" name="Default Changelist" comment="Added external api, and a lot of fields">
-      <change afterPath="$PROJECT_DIR$/img/icons/blind.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icons/close_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icons/mute.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icons/settings_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icons/visual.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icons/volume.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/before.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/joke.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/RetroBit server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RetroBit server.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5617c3fe-9466-4fe7-9f33-abb50f8ddb5c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5617c3fe-9466-4fe7-9f33-abb50f8ddb5c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="129d0686-e7d1-4637-9893-0682b2c9e670" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbconfig.php" beforeDir="false" afterPath="$PROJECT_DIR$/dbconfig.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js.php" beforeDir="false" afterPath="$PROJECT_DIR$/js/after.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/activation.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/activation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/activations.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/activations.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/current.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/current.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/recents.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/recents.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postActivation.php" beforeDir="false" afterPath="$PROJECT_DIR$/postActivation.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +99,7 @@
       <workItem from="1601368801986" duration="37483000" />
       <workItem from="1601992322437" duration="2721000" />
       <workItem from="1602172901157" duration="25121000" />
-      <workItem from="1602512307184" duration="8853000" />
+      <workItem from="1602512307184" duration="9753000" />
     </task>
     <task id="LOCAL-00001" summary="Added config, updated everything">
       <created>1602196545000</created>
@@ -131,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602196545000</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added external api, and a lot of fields">
+      <created>1602521773128</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602521773128</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,10 +156,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="653" y="191" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#function0/0.0.1536.834@0.0.1536.834" timestamp="1602176642719" />
-    <state x="383" y="4" key="CommitChangelistDialog2" timestamp="1602521607696">
+    <state x="383" y="4" key="CommitChangelistDialog2" timestamp="1602521772442">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="383" y="4" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1602521607696" />
+    <state x="383" y="4" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1602521772442" />
     <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1601372147082">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -230,10 +214,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1602175434739" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1602196547000">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1602521774689">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1602196547000" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1602521774689" />
     <state x="668" y="357" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1602193451800">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -269,10 +253,10 @@
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1601919769475" />
     <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1602258694833" />
-    <state x="431" y="147" width="672" height="687" key="search.everywhere.popup" timestamp="1602520395574">
+    <state x="431" y="147" width="672" height="687" key="search.everywhere.popup" timestamp="1602521926994">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1601924823828" />
-    <state x="431" y="147" width="672" height="687" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1602520395574" />
+    <state x="431" y="147" width="672" height="687" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1602521926994" />
   </component>
 </project>
