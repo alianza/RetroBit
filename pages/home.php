@@ -1,9 +1,18 @@
-<a href="index.php?page=config">Configure</a>
+<?php include_once('../dbconfig.php'); ?>
 
-<?php
+<div class="currents">
 
-include_once('../dbconfig.php');
+    <?php  include_once('current.php'); ?>
 
-include_once('current.php');
+</div>
 
-include_once('recents.php');
+<div class="recents">
+
+    <?php include_once('recents.php'); ?>
+
+</div>
+
+<form action="index.php" method='get' enctype='multipart/form-data'>
+    <input type="submit" class="fab material-icons" value="settings">
+    <input type="hidden" name="page" value="config">
+</form>

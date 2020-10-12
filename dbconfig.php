@@ -39,18 +39,23 @@ function doPDOGetStmt(string $query,PDO $db, array $array = null) : PDOStatement
 function displayActivation($row)
 {
     $id = $row['id'];
+    if (!empty($row['name'])) { $name = $row['name']; } else { $name = "Unknown"; }
     $time = $row['time'];
-    $sample = $row['sample'];
     $audio = $row['audio'];
-    $visual = $row;
+    $visual = $row['visual'];
 
     echo("
         <form class='card' action='index.php?page=activation&id=$id' method='post'>
         
-            <span>#$id</span>
+        <div>
+            <span>$name #$id</span>
 
             <span>At: $time</span>
-                        
+        </div>
+        <div>    
+            <img alt='Visual' title='Visual indication' src='img/icons/" . ($audio == 1 ? 'volume' : 'mute') . ".png'>
+            <img alt='Audible' title='Audible indication' src='img/icons/" . ($visual == 1 ? 'visual' : 'blind') . ".png'>
+        </div>        
             <a href='#' onclick='this.closest(\"form\").submit(); return false;'>Open</a>
                     
         </form>");

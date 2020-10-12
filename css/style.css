@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+* {
+    font-family: roboto, serif;
+}
+
 body {
     font-family: roboto, serif;
     margin: 0;
@@ -50,7 +54,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    box-shadow: 0 0 5px 0px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
     background-color: white;
 }
 
@@ -80,7 +84,7 @@ body {
     padding-bottom: 1em;
 }
 
-.card * {
+.card span, .card a {
     margin: 0 .2em;
     vertical-align: center;
     line-height: 2em;
@@ -156,7 +160,7 @@ body {
 
 /*BEGIN GENERAL STYLES*/
 
-input[type='submit'] {
+input[type='submit'], input[type='image'] {
     background-color: #f9b000;
     box-shadow: #333333 0 0 0 1px;
     border: none;
@@ -180,6 +184,27 @@ input[type='submit']:focus {
     outline: none;
 }
 
+input.fab {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border: none;
+    outline: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    font-size: 36px;
+    padding: 0;
+    color: white;
+    position: fixed;
+    right: 1em;
+    bottom: 2em;
+    z-index: 1;
+}
+
+input[name='delete'] {
+    background-color: crimson;
+    color: white;
+}
+
 #notice {
     width: 35%;
     margin: 0 auto;
@@ -189,4 +214,46 @@ input[type='submit']:focus {
     box-shadow: 0 0 5px rgba(0, 0, 0, .5);
 }
 
+#joke {
+    width: 50%;
+    text-align: center;
+    padding: 2em;
+    border-radius: .5em;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    margin: 1em auto 0;
+}
+
+#joke img {
+    float: right;
+    width: 32px;
+    height: 32px;
+    margin: -2em;
+    transition: transform .35s;
+}
+
+#joke img:hover {
+    transition: transform .1s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dl,
+dd {
+    font-size: .9rem;
+}
+
+dd:not(:last-of-type) {
+    margin-bottom: 1em;
+}
+
 /*END GENERAL STYLES*/
+
+@media only screen and (max-width: 600px) {
+    #page {
+        padding: .5em;
+    }
+}

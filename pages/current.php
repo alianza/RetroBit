@@ -2,10 +2,9 @@
 
 <?php
 
-//include_once("../dbconfig.php");
+include_once("../dbconfig.php");
 
-$stmt = doPDOGetStmt("SELECT * FROM `activation` WHERE DATE_SUB(NOW(), INTERVAL 1 MINUTE) < time", $db, null);
-
+$stmt = doPDOGetStmt("SELECT activation.*, config.name FROM activation LEFT JOIN config on activation.retrobitId = config.id WHERE DATE_SUB(NOW(), INTERVAL 1 MINUTE) < time", $db, null);
 
 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 
@@ -15,16 +14,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
     $audio = $row['audio'];
     $visual = $row['visual'];
 
-    echo (" 
-     <form class='card'  action='index.php?page=activation&id=$id' method='post'>
-        
-                <span>#$id</span>
-    
-                <span>At: $time</span>
-                
-                <a href='#' onclick='this.closest(\"form\").submit(); return false;'>Open</a>
-                    
-        </form>");
+    displayActivation($row);
 
 }
 

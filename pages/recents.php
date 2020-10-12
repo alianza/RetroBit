@@ -6,8 +6,9 @@
 
 //    include_once("../dbconfig.php");
 
-    $stmt = doPDOGetStmt("SELECT * FROM (SELECT * FROM activation ORDER BY id DESC LIMIT 10) Var1 ORDER BY id DESC"
-                            , $db, null);
+    $stmt = doPDOGetStmt("SELECT * FROM (SELECT activation.*, config.name FROM activation
+                                LEFT JOIN config on activation.retrobitId = config.id ORDER BY id DESC LIMIT 10) Var1
+                                ORDER BY id DESC", $db, null);
 
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
         displayActivation($row);

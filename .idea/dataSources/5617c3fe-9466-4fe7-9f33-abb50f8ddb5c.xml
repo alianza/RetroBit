@@ -1103,7 +1103,7 @@
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="347" parent="338" name="sound_requency">
+    <column id="347" parent="338" name="sound_frequency">
       <Position>8</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
@@ -1133,17 +1133,19 @@
       <Position>2</Position>
       <DataType>varchar(128)|0s</DataType>
       <NotNull>1</NotNull>
-      <DefaultExpression>&apos;RetroBit&apos;</DefaultExpression>
+      <DefaultExpression>&apos;New RetroBit&apos;</DefaultExpression>
     </column>
     <column id="353" parent="339" name="audio">
       <Position>3</Position>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
+      <DefaultExpression>1</DefaultExpression>
     </column>
     <column id="354" parent="339" name="visual">
       <Position>4</Position>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
+      <DefaultExpression>1</DefaultExpression>
     </column>
     <column id="355" parent="339" name="threshold">
       <Position>5</Position>
