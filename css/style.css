@@ -225,6 +225,7 @@ input[name='delete'] {
     border-radius: .5em;
     box-shadow: 0 0 5px rgba(0, 0, 0, .5);
     margin: 1em auto 0;
+    word-wrap: break-word;
 }
 
 #joke img {
