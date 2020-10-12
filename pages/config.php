@@ -87,7 +87,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
          </div>
          <div class='field'>    
             <label for='visual_color'>Visual alert color</label>
-            <input type='color' id='visual_color' name='visual_color' value='" . "#".substr("000000".dechex($row["visual_color"]),-6) . "'>
+            <input type='color' id='visual_color' name='visual_color' value='" . getColorFromInt($row["visual_color"]) . "'>
          </div>      
          
             <input type='hidden' name='id' value='{$row["id"]}'>

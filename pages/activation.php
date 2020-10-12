@@ -36,10 +36,11 @@
                 <span id='audio'>Audio: " . ($audio == 1 ? 'Yes' : 'No') . "</span>
                 <span id='visual'>Visual: " . ($visual == 1 ? 'Yes' : 'No') . "</span>
                 <span id='sample'>Sample: $sample</span>
-                <span id='sample'>RetrobitId: $retrobitId</span>
-                <span id='sample'>Sound Frequency: $sound_frequency</span>
-                <span id='sample'>Sound Length: $sound_length</span>
-                <span id='sample'>Visual Color: $visual_color</span>
+                <span id='retrobitid'>RetrobitId: $retrobitId</span>
+                <span id='sound_frequency'>Sound Frequency: $sound_frequency</span>
+                <span id='sound_length'>Sound Length: $sound_length</span>
+                <label for='visual_color'>Visual Color: </label>
+                <input type='color' disabled id='visual_color' value='" . getColorFromInt($visual_color) ."'/>
                 
                 <input type='submit' name='delete' value='Remove'>
         </form>");

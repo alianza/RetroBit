@@ -36,8 +36,7 @@ function doPDOGetStmt(string $query,PDO $db, array $array = null) : PDOStatement
 /**
  * @param $row
  */
-function displayActivation($row)
-{
+function displayActivation($row) {
     $id = $row['id'];
     if (!empty($row['name'])) { $name = $row['name']; } else { $name = "Unknown"; }
     $time = $row['time'];
@@ -59,4 +58,8 @@ function displayActivation($row)
             <a href='#' onclick='this.closest(\"form\").submit(); return false;'>Open</a>
                     
         </form>");
+}
+
+function getColorFromInt($number) {
+    return ("#".substr("000000".dechex($number),-6));
 }
