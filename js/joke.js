@@ -11,19 +11,25 @@ const jokeSettings = {
 
 function doJoke() {
     $("#joke").each(function () {
-        $(this).hide(500);
+        $(this).hide(500, function () {
+            this.remove();
+            console.log("Remove: " + this);
+        });
     });
 
+    setTimeout(function () {
     $.ajax(jokeSettings).done(function (joke) {
-        console.log(joke);
-        if (joke.type === "twopart") {
-            $('#header').after("<div id='joke'><img alt='close' onclick='$(this).parent().hide(500)' src='img/icons/close_icon.png'>" + joke.setup + "<br><strong>" + joke.delivery + "</strong></div>")
-        } else {
-            $('#header').after("<div id='joke'><img alt='close' onclick='$(this).parent().hide(500)' src='img/icons/close_icon.png'>" + joke.joke + "</div>")
-        }
-    });
+            console.log(joke);
+            if (joke.type === "twopart") {
+                $('#header').after("<div id='joke'><img alt='close' onclick='$(this).parent().hide(500)' src='img/icons/close_icon.png'>" + joke.setup + "<br><strong>" + joke.delivery + "</strong></div>")
+            } else {
+                $('#header').after("<div id='joke'><img alt='close' onclick='$(this).parent().hide(500)' src='img/icons/close_icon.png'>" + joke.joke + "</div>")
+            }
+        });
+
+    }, 500);
 }
 
-timeout = setTimeout(function () {doJoke()}, 1000);
+timeout = setTimeout(function () { doJoke() }, 1000);
 
-interval = setInterval(function () {doJoke()}, 30000);
+interval = setInterval(function () { doJoke() }, 30000);
