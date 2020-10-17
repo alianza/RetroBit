@@ -22,4 +22,4 @@
 
 </div>
 
-<a href="index.php?page=activations">All activations</a>
+<a href="index.php?page=activations">All activations</a> <a href="index.php?page=config">Configuration</a>
