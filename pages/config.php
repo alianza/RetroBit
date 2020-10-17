@@ -1,8 +1,9 @@
+<h2>Configuration</h2>
+<p>Here you can create and remove RetroBits and configure their settings</p>
+
 <?php
 
-//include_once("../dbconfig.php");
-
-echo("<div id='stopRefresh'></div>");
+include_once("dbconfig.php");
 
 $id = $name = $audio = $visual = $threshold = $alert_repeat = $sound_frequency = $sound_length = $visual_color = null;
 
@@ -78,8 +79,8 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
             <input type='number' id='alert_repeat' name='alert_repeat' value='{$row["alert_repeat"]}'>
          </div>
          <div class='field'>    
-            <label for='sound_frequency'>Audio frequency (hz)</label>
-            <input type='number' id='sound_frequency' name='sound_frequency' value='{$row["sound_frequency"]}'>
+            <label for='sound_frequency'>Sound frequency (hz)</label>
+            <input type='number' step='100' onchange='previewTone(this.value)' id='sound_frequency' name='sound_frequency' value='{$row["sound_frequency"]}'>
          </div>
          <div class='field'>    
             <label for='sound_length'>Sound length</label>
