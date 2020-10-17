@@ -34,14 +34,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             } else {
                 echo("<div id='notice'>Not updated</div>");
             }
+
         } else if (isset($_POST['delete'])) {
+
             if (doPDOSend("DELETE FROM config WHERE id = :id", $db, array(':id' => $id))) {
                 echo("<div id='notice'>Config for $name successfully deleted</div>");
             } else {
                 echo("<div id='notice'>Config for $name was NOT deleted</div>");
             }
         }
+
     } else if (isset($_POST['new_retrobit'])) {
+
         if (doPDOSend("INSERT INTO config () VALUES ()", $db, null)) {
             echo("<div id='notice'>New RetroBit created</div>");
         } else {
@@ -83,8 +87,8 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
             <input type='number' step='100' onchange='previewTone(this.value)' id='sound_frequency' name='sound_frequency' value='{$row["sound_frequency"]}'>
          </div>
          <div class='field'>    
-            <label for='sound_length'>Sound length</label>
-            <input type='number' id='sound_length' name='sound_length' value='{$row["sound_length"]}'>
+            <label for='sound_length'>Sound length (ms)</label>
+            <input type='number' step='100' id='sound_length' name='sound_length' value='{$row["sound_length"]}'>
          </div>
          <div class='field'>    
             <label for='visual_color'>Visual alert color</label>
@@ -104,9 +108,6 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
     ");
 
 }
-
-// TODO Add color config (html5 color picker)
-
 ?>
 
 <form method='post' enctype='multipart/form-data'>

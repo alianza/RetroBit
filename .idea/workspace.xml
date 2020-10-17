@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="129d0686-e7d1-4637-9893-0682b2c9e670" name="Default Changelist" comment="">
+    <list default="true" id="129d0686-e7d1-4637-9893-0682b2c9e670" name="Default Changelist" comment="Cleanup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/before.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/before.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/joke.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/joke.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/activation.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/activation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/activations.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/activations.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/current.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/current.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +51,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
@@ -92,7 +88,7 @@
       <workItem from="1602172901157" duration="25121000" />
       <workItem from="1602512307184" duration="17966000" />
       <workItem from="1602947426985" duration="727000" />
-      <workItem from="1602948175653" duration="5996000" />
+      <workItem from="1602948175653" duration="6389000" />
     </task>
     <task id="LOCAL-00001" summary="Added config, updated everything">
       <created>1602196545000</created>
@@ -129,7 +125,28 @@
       <option name="project" value="LOCAL" />
       <updated>1602528739239</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fixed jokes">
+      <created>1602958588477</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1602958588477</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added flexbox cards">
+      <created>1602958604991</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1602958604991</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added sound frequency preview">
+      <created>1602958619008</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1602958619008</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,7 +158,10 @@
     <MESSAGE value="Added config color picker" />
     <MESSAGE value="Added color picker" />
     <MESSAGE value="Added reloading jokes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added reloading jokes" />
+    <MESSAGE value="Fixed jokes" />
+    <MESSAGE value="Added flexbox cards" />
+    <MESSAGE value="Added sound frequency preview" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added sound frequency preview" />
   </component>
   <component name="WindowStateProjectService">
     <state x="475" y="55" key="#PHP" timestamp="1600773724118">
@@ -173,10 +193,14 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="653" y="191" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#function0/0.0.1536.834@0.0.1536.834" timestamp="1602176642719" />
-    <state x="383" y="4" key="CommitChangelistDialog2" timestamp="1602528738720">
+    <state x="516" y="272" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1602958762196">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="383" y="4" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1602528738720" />
+    <state x="516" y="272" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.834@0.0.1536.834" timestamp="1602958762196" />
+    <state x="383" y="4" key="CommitChangelistDialog2" timestamp="1602958754555">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="383" y="4" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1602958754555" />
     <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1601372147082">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -231,10 +255,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1602175434739" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1602528740718">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1602958621326">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1602528740718" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1602958621326" />
     <state x="668" y="357" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1602193451800">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

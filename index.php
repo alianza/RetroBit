@@ -40,7 +40,7 @@ if ($page == "home") {
 
         fetch(url,).then(response => response.text())
             .then(data => document.getElementById('page').innerHTML = data.toString())
-            .then(console.log("Fetched: " + url.toString()), checkForCurrentActivations());
+            .then(() => console.log("Fetched: " + url.toString()), () => checkForCurrentActivations());
     }
 </script>
 
