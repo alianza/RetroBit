@@ -1,10 +1,13 @@
 <h2>Current Activations</h2>
 
+<div class="cards_container">
+
 <?php
 
 include_once("../dbconfig.php");
 
-$stmt = doPDOGetStmt("SELECT activation.*, config.name FROM activation LEFT JOIN config on activation.retrobitId = config.id WHERE DATE_SUB(NOW(), INTERVAL 1 MINUTE) < time", $db, null);
+$stmt = doPDOGetStmt("SELECT activation.*, config.name FROM activation LEFT JOIN config on activation.retrobitId = config.id 
+                            WHERE DATE_SUB(NOW(), INTERVAL 1 MINUTE) < time", $db, null);
 
 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 
@@ -23,3 +26,5 @@ if ($stmt->rowCount() == 0) {
 }
 
 ?>
+
+</div>

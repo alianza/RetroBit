@@ -70,34 +70,48 @@ body {
     box-shadow: 0 0 5px rgba(0, 0, 0, .5);
     padding: 1em;
     border-radius: 5px;
-    margin: .5em 0;
+    margin: .5em;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    white-space: nowrap;
+
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 350px;
 }
 
-.card:last-of-type {
-    margin: 0;
+.card.info {
+    white-space: normal;
 }
 
 .cards_container {
     padding-bottom: 1em;
+    margin: -.5em;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.card span, .card a {
+.card span, .card label {
     margin: 0 .2em;
     vertical-align: center;
     line-height: 2em;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 200px;
 }
 
 .card a {
     width: 100%;
     text-align: right;
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 .card h3 {
     display: inline-block;
-    width: 100%;
+    flex-basis: 100%;
 }
 
 .card label {
@@ -260,5 +274,18 @@ dd:not(:last-of-type) {
 @media only screen and (max-width: 600px) {
     #page {
         padding: .5em;
+    }
+
+    #notice {
+        width: 50%;
+    }
+
+    #joke {
+        padding: 1.5em;
+        width: 80%;
+    }
+
+    #joke img {
+        margin: -1.5em;
     }
 }

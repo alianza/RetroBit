@@ -29,7 +29,7 @@
             echo("<h2>Activation at: $time</h2>");
 
             echo(" 
-     <form class='card' action='index.php?page=deleteActivation&id=$id' method='post'>
+     <form class='card' onsubmit='return confirm(\"Are you sure you want to delete activation $name #$id\");' action='index.php?page=deleteActivation&id=$id' method='post'>
     
                 <h3>$name #$id</h3>
                 <span id='time'>Time: $time</span>
@@ -39,9 +39,9 @@
                 <span id='retrobitid'>RetrobitId: $retrobitId</span>
                 <span id='sound_frequency'>Sound Frequency: $sound_frequency</span>
                 <span id='sound_length'>Sound Length: $sound_length</span>
-                <label for='visual_color'>Visual Color: </label>
+                <label for='visual_color'>Visual Color: 
                 <input type='color' disabled id='visual_color' value='" . getColorFromInt($visual_color) ."'/>
-                
+                </label>
                 <input type='submit' name='delete' value='Remove'>
         </form>");
 
@@ -64,7 +64,7 @@
 
     ?>
 
-<form class="card">
+<form class="card info">
     <h3>Info!</h3>
     <dl>
         <dt>Name</dt>

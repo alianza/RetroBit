@@ -1,5 +1,7 @@
 <h2>All Activations</h2>
 
+<div class="cards_container">
+
 <?php
 
     include_once("../dbconfig.php");
@@ -15,3 +17,7 @@
     if ($stmt->rowCount() == 0) {
         echo("<div id='notice'>No activations yet...</div>");
     }
+
+    ?>
+
+</div>
