@@ -6,7 +6,7 @@
 
     include_once("../dbconfig.php");
 
-    $stmt = doPDOGetStmt("SELECT activation.*, config.name FROM activation
+    $stmt = doPDOGetStmt("SELECT activation.*,DATE_FORMAT(activation.time,'%d-%m-%Y %H:%i:%s') as formattedTime, config.name FROM activation
                                 INNER JOIN config on activation.retrobitId = config.id ORDER BY id DESC",
                                 $db, null);
 

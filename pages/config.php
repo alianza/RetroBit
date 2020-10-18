@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (isset($_POST['id'])) { $id = $_POST['id']; }
 
-    if (isset($_POST['submit']) || isset($_POST['delete'])) {
+    if (isset($_POST['update'])) {
 
         if (isset($_POST['name'])) { $name = $_POST['name']; }
         if (isset($_POST['audio'])) { $audio = 1; } else { $audio = 0; }
@@ -22,28 +22,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (isset($_POST['sound_length'])) {$sound_length = $_POST['sound_length'];}
         if (isset($_POST['visual_color'])) {$visual_color = hexdec($_POST['visual_color']);}
 
-        if (isset($_POST['submit'])) {
-
-            if (doPDOSend("UPDATE config SET name = :new_name, audio = :new_audio, visual = :new_visual, 
-                            threshold = :new_threshold, alert_repeat = :new_alert_repeat, sound_frequency = :new_sound_frequency, 
-                            sound_length = :new_sound_length, visual_color = :new_visual_color WHERE id = :old_id", $db,
-                array(':new_name' => $name, ':new_audio' => $audio, 'new_visual' => $visual, 'new_threshold' => $threshold,
-                    ':new_alert_repeat' => $alert_repeat, ':new_sound_frequency' => $sound_frequency,
-                    ':new_sound_length' => $sound_length, ':new_visual_color' => $visual_color, ':old_id' => $id))) {
-                echo("<div id='notice'>Successfully updated $name</div>");
-            } else {
-                echo("<div id='notice'>Not updated</div>");
-            }
-
-        } else if (isset($_POST['delete'])) {
-
-            if (doPDOSend("DELETE FROM config WHERE id = :id", $db, array(':id' => $id))) {
-                echo("<div id='notice'>Config for $name successfully deleted</div>");
-            } else {
-                echo("<div id='notice'>Config for $name was NOT deleted</div>");
-            }
+        if (doPDOSend("UPDATE config SET name = :new_name, audio = :new_audio, visual = :new_visual, 
+                        threshold = :new_threshold, alert_repeat = :new_alert_repeat, sound_frequency = :new_sound_frequency, 
+                        sound_length = :new_sound_length, visual_color = :new_visual_color WHERE id = :old_id", $db,
+            array(':new_name' => $name, ':new_audio' => $audio, 'new_visual' => $visual, 'new_threshold' => $threshold,
+                ':new_alert_repeat' => $alert_repeat, ':new_sound_frequency' => $sound_frequency,
+                ':new_sound_length' => $sound_length, ':new_visual_color' => $visual_color, ':old_id' => $id))) {
+            echo("<div id='notice'>Successfully updated $name</div>");
+        } else {
+            echo("<div id='notice'>Not updated</div>");
         }
 
+    } else if (isset($_POST['delete'])) {
+
+        if (isset($_POST['name'])) { $name = $_POST['name']; }
+
+        if (doPDOSend("DELETE FROM config WHERE id = :id", $db, array(':id' => $id))) {
+            echo("<div id='notice'>Config for $name successfully deleted</div>");
+        } else {
+            echo("<div id='notice'>Config for $name was NOT deleted</div>");
+        }
     } else if (isset($_POST['new_retrobit'])) {
 
         if (doPDOSend("INSERT INTO config () VALUES ()", $db, null)) {
@@ -59,7 +57,7 @@ $stmt = doPDOGetStmt("SELECT * FROM config", $db, null);
 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 
     echo("
-    <details " . ($row['id'] === $id ? 'open': '') . " >
+        <details " . ($row['id'] === $id ? 'open': '') . " >
          <summary>{$row["name"]}</summary>
          <form method='post' enctype='multipart/form-data'>
           <div class='field'>
@@ -84,26 +82,29 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
          </div>
          <div class='field'>    
             <label for='sound_frequency'>Sound frequency (hz)</label>
-            <input type='number' step='100' onchange='previewTone(this.value)' id='sound_frequency' name='sound_frequency' value='{$row["sound_frequency"]}'>
+            <input type='number' min='100' step='100' onchange='previewTone(this.value, this.parentElement.nextSibling.nextSibling.childNodes[2].nextSibling.value)' id='sound_frequency' name='sound_frequency' value='{$row["sound_frequency"]}'>
          </div>
          <div class='field'>    
             <label for='sound_length'>Sound length (ms)</label>
-            <input type='number' step='100' id='sound_length' name='sound_length' value='{$row["sound_length"]}'>
+            <input type='number' min='100' step='100' id='sound_length' name='sound_length' value='{$row["sound_length"]}'>
          </div>
          <div class='field'>    
             <label for='visual_color'>Visual alert color</label>
             <input type='color' id='visual_color' name='visual_color' value='" . getColorFromInt($row["visual_color"]) . "'>
          </div>      
-         
-            <input type='hidden' name='id' value='{$row["id"]}'>
             <br>
          <div class='field'> 
-            <input type='submit' name='submit' value='Update'>
+            <input type='submit' name='update' value='Update'>
          </div>  
-         <div class='field'> 
+          <input type='hidden' name='id' value='{$row["id"]}'>
+        </form>
+        <form method='post' enctype='multipart/form-data' onsubmit='return confirm(\"Are you sure you want to remove config for {$row['name']}\");'>
+        <div class='field'> 
             <input type='submit' name='delete' value='Remove {$row["name"]}'>
          </div>  
-        </form>
+         <input type='hidden' name='id' value='{$row["id"]}'>         
+         <input type='hidden' name='name' value='{$row["name"]}'>
+         </form method='post' enctype='multipart/form-data'>
     </details>
     ");
 

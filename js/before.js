@@ -68,21 +68,15 @@ function notify(messageContent) {
     new Notification(messageContent);
 }
 
-function previewTone(frequency) {
-    console.log("Tone!");
-
+function previewTone(frequency, length) {
     // create web audio api context
     const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-
     // create Oscillator node
     let oscillator = audioCtx.createOscillator();
-
     // We create a gain intermediary
     const volume = audioCtx.createGain();
-
     // Then connect the volume to the context destination
     volume.connect(audioCtx.destination);
-
     // We can set & modify the gain knob
     volume.gain.value = 0.1;
 
@@ -90,5 +84,5 @@ function previewTone(frequency) {
     oscillator.frequency.setValueAtTime(frequency, audioCtx.currentTime); // value in hertz
     oscillator.connect(volume);
     oscillator.start(audioCtx.currentTime);
-    oscillator.stop(audioCtx.currentTime + 1);
+    oscillator.stop(audioCtx.currentTime + length/1000); // convert seconds to ms
 }

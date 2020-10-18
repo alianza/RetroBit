@@ -206,6 +206,31 @@ input[type='submit']:focus {
     outline: none;
 }
 
+input[type='color'] {
+    border: none;
+    vertical-align: middle;
+    border-radius: .35em;
+}
+
+input[type='color']:enabled {
+    cursor: pointer;
+    transition: box-shadow .35s;
+}
+
+input[type='color']:enabled:hover {
+    transition: box-shadow .1s;
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, .5);
+}
+
+input[type='color']::-webkit-color-swatch-wrapper {
+    border-radius: .35em;
+}
+
+input[type='color']::-webkit-color-swatch {
+    border: none;
+    border-radius: .35em;
+}
+
 input.fab {
     border-radius: 50%;
     width: 60px;
@@ -271,6 +296,19 @@ dd {
 
 dd:not(:last-of-type) {
     margin-bottom: 1em;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #cccccc;
+    outline: 1px solid slategrey;
 }
 
 /*END GENERAL STYLES*/

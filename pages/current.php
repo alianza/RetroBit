@@ -6,7 +6,7 @@
 
 include_once("../dbconfig.php");
 
-$stmt = doPDOGetStmt("SELECT activation.*, config.name FROM activation LEFT JOIN config on activation.retrobitId = config.id 
+$stmt = doPDOGetStmt("SELECT activation.*,DATE_FORMAT(activation.time,'%d-%m-%Y %H:%i:%s') as formattedTime, config.name FROM activation LEFT JOIN config on activation.retrobitId = config.id 
                             WHERE DATE_SUB(NOW(), INTERVAL 1 MINUTE) < time", $db, null);
 
 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {

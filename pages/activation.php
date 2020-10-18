@@ -9,13 +9,13 @@
 
         try {
 
-            $result = doPDOGet("SELECT activation.*, config.name FROM activation 
+            $result = doPDOGet("SELECT activation.*, DATE_FORMAT(activation.time,'%d-%m-%Y %H:%i:%s') as formattedTime, config.name FROM activation 
                                       LEFT JOIN config ON activation.retrobitId = config.id WHERE activation.id = :id",
                                       $db, array(':id' => $id));
 
             if (!empty($result)) {
                 $id = $result['id'];
-                $time = $result['time'];
+                $time = $result['formattedTime'];
                 $sample = $result['sample'];
                 $audio = $result['audio'];
                 $visual = $result['visual'];
@@ -29,7 +29,7 @@
             echo("<h2>Activation at: $time</h2>");
 
             echo(" 
-     <form class='card' onsubmit='return confirm(\"Are you sure you want to delete activation $name #$id\");' action='index.php?page=deleteActivation&id=$id' method='post'>
+     <form class='card' onsubmit='return confirm(\"Are you sure you want to remove activation $name #$id\");' action='index.php?page=deleteActivation&id=$id' method='post'>
     
                 <h3>$name #$id</h3>
                 <span id='time'>Time: $time</span>

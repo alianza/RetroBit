@@ -7,6 +7,13 @@
     <list default="true" id="129d0686-e7d1-4637-9893-0682b2c9e670" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbconfig.php" beforeDir="false" afterPath="$PROJECT_DIR$/dbconfig.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/before.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/before.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/activation.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/activation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/activations.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/activations.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/current.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/current.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/recents.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/recents.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,18 +62,18 @@
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Xamp Dir\RetroBit server\img\icons" />
-      <recent name="C:\xampp\htdocs\Xamp Dir\RetroBit server\js" />
-      <recent name="C:\xampp\htdocs\Xamp Dir\RetroBit server\img" />
-      <recent name="C:\xampp\htdocs\Xamp Dir\RetroBit server\lib" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\Xamp Dir\RetroBit server\img\icons" />
       <recent name="C:\xampp\htdocs\Xamp Dir\RetroBit server\pages" />
       <recent name="C:\xampp\htdocs\Xamp Dir\RetroBit server\img" />
       <recent name="C:\xampp\htdocs\Xamp Dir\RetroBit server" />
       <recent name="C:\xampp\htdocs\Xamp Dir" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Xamp Dir\RetroBit server\img\icons" />
+      <recent name="C:\xampp\htdocs\Xamp Dir\RetroBit server\js" />
+      <recent name="C:\xampp\htdocs\Xamp Dir\RetroBit server\img" />
+      <recent name="C:\xampp\htdocs\Xamp Dir\RetroBit server\lib" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -88,7 +95,7 @@
       <workItem from="1602172901157" duration="25121000" />
       <workItem from="1602512307184" duration="17966000" />
       <workItem from="1602947426985" duration="727000" />
-      <workItem from="1602948175653" duration="8917000" />
+      <workItem from="1602948175653" duration="17184000" />
     </task>
     <task id="LOCAL-00001" summary="Added config, updated everything">
       <created>1602196545000</created>
@@ -153,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602958950895</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Fixes">
+      <created>1602967318034</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1602967318034</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,7 +183,8 @@
     <MESSAGE value="Added flexbox cards" />
     <MESSAGE value="Added sound frequency preview" />
     <MESSAGE value="Cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleanup" />
+    <MESSAGE value="Fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="475" y="55" key="#PHP" timestamp="1600773724118">
@@ -205,10 +220,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="516" y="272" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.834@0.0.1536.834" timestamp="1602958762196" />
-    <state x="383" y="4" key="CommitChangelistDialog2" timestamp="1602958950395">
+    <state x="383" y="4" key="CommitChangelistDialog2" timestamp="1602967317499">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="383" y="4" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1602958950395" />
+    <state x="383" y="4" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1602967317499" />
     <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1601372147082">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -226,26 +241,26 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="490" y="122" key="Github.UntrackedFilesDialog/0.0.1536.834@0.0.1536.834" timestamp="1601998098588" />
-    <state width="1145" height="123" key="GridCell.Tab.0.bottom" timestamp="1602195619499">
+    <state width="1185" height="60" key="GridCell.Tab.0.bottom" timestamp="1603042731350">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1024" height="162" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601914692777" />
-    <state width="1145" height="123" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1602195619499" />
-    <state width="1145" height="123" key="GridCell.Tab.0.center" timestamp="1602195619499">
+    <state width="1185" height="60" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1603042731350" />
+    <state width="1185" height="60" key="GridCell.Tab.0.center" timestamp="1603042731350">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1024" height="162" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601914692777" />
-    <state width="1145" height="123" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1602195619499" />
-    <state width="1145" height="123" key="GridCell.Tab.0.left" timestamp="1602195619499">
+    <state width="1185" height="60" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1603042731350" />
+    <state width="1185" height="60" key="GridCell.Tab.0.left" timestamp="1603042731350">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1024" height="162" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601914692777" />
-    <state width="1145" height="123" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1602195619499" />
-    <state width="1145" height="123" key="GridCell.Tab.0.right" timestamp="1602195619499">
+    <state width="1185" height="60" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1603042731350" />
+    <state width="1185" height="60" key="GridCell.Tab.0.right" timestamp="1603042731350">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1024" height="162" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601914692777" />
-    <state width="1145" height="123" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1602195619499" />
+    <state width="1185" height="60" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1603042731350" />
     <state width="189" height="457" key="HiddenNamespacesPopup" timestamp="1601372222368">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -263,19 +278,23 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1602175434739" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1602958955032">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1602967319005">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1602958955032" />
-    <state x="668" y="357" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1602193451800">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1602967319005" />
+    <state x="668" y="357" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1603035693190">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="668" y="353" key="com.intellij.database.run.ParametersPanel.Standalone/0.0.1536.824@0.0.1536.824" timestamp="1601912470735" />
-    <state x="668" y="357" key="com.intellij.database.run.ParametersPanel.Standalone/0.0.1536.834@0.0.1536.834" timestamp="1602193451800" />
+    <state x="668" y="357" key="com.intellij.database.run.ParametersPanel.Standalone/0.0.1536.834@0.0.1536.834" timestamp="1603035693190" />
     <state x="612" y="115" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1601471501179">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="612" y="115" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1601471501179" />
+    <state x="93" y="93" width="1350" height="648" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1603043475946">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="93" y="93" width="1350" height="648" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/0.0.1536.834@0.0.1536.834" timestamp="1603043475946" />
     <state x="290" y="255" width="707" height="666" key="dock-window-1" timestamp="1602193602709">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -284,11 +303,11 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="1109" y="0" width="434" height="840" key="dock-window-2/0.0.1536.834@0.0.1536.834" timestamp="1602193602710" />
-    <state x="234" y="58" width="1040" height="691" key="find.popup" timestamp="1602960996187">
+    <state x="234" y="58" width="1040" height="691" key="find.popup" timestamp="1603041238438">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="478" y="145" width="579" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1601924828294" />
-    <state x="234" y="58" width="1040" height="691" key="find.popup/0.0.1536.834@0.0.1536.834" timestamp="1602960996187" />
+    <state x="234" y="58" width="1040" height="691" key="find.popup/0.0.1536.834@0.0.1536.834" timestamp="1603041238438" />
     <state x="360" y="95" key="new project wizard" timestamp="1601464793734">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -297,15 +316,15 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="545" y="184" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1601373284411" />
-    <state x="425" y="189" key="run.anything.popup" timestamp="1602258694833">
+    <state x="425" y="189" key="run.anything.popup" timestamp="1603037506989">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1601919769475" />
-    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1602258694833" />
-    <state x="431" y="147" width="672" height="687" key="search.everywhere.popup" timestamp="1602961003834">
+    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1603037506989" />
+    <state x="431" y="147" width="672" height="687" key="search.everywhere.popup" timestamp="1603042827570">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1601924823828" />
-    <state x="431" y="147" width="672" height="687" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1602961003834" />
+    <state x="431" y="147" width="672" height="687" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1603042827570" />
   </component>
 </project>
