@@ -15,6 +15,3 @@ if (isset($_GET['retrobitId']) && $_GET['retrobitId'] != '') {
     echo("No Retrobit id given");
 
 }
-
-// TODO Config Crud per retrobit
-// TODO Add color config (html5 color picker)
