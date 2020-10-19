@@ -65,6 +65,10 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
             <input type='text' id='name' name='name' value='{$row['name']}'>
          </div>
          <div class='field'>
+            <label for='id'>RetroBit ID</label>
+            <input type='number' min='1' step='1' name='id' id='id' value='{$row["id"]}'> 
+         </div>      
+         <div class='field'>
             <label for='audio'>Audio alert</label>
             <input type='checkbox' id='audio' name='audio' " . ($row['audio'] == 1 ? 'checked' : '') . ">
          </div>  
@@ -101,8 +105,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
         <form method='post' enctype='multipart/form-data' onsubmit='return confirm(\"Are you sure you want to remove config for {$row['name']}\");'>
         <div class='field'> 
             <input type='submit' name='delete' value='Remove {$row["name"]}'>
-         </div>  
-         <input type='hidden' name='id' value='{$row["id"]}'>         
+         </div>    
          <input type='hidden' name='name' value='{$row["name"]}'>
          </form method='post' enctype='multipart/form-data'>
     </details>

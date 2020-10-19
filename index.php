@@ -38,7 +38,7 @@ if ($page == "home") {
 
         <?php if (isset($_GET['id']) && $_GET['id'] != "") { echo("url = url + '?id=" . $_GET['id'] . "';"); } ?>
 
-        fetch(url,).then(response => response.text())
+        fetch(url).then(response => response.text())
             .then(data => document.getElementById('page').innerHTML = data.toString())
             .then(console.log("Fetched: " + url.toString()), checkForCurrentActivations());
     }

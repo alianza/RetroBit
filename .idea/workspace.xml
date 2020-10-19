@@ -23,13 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="129d0686-e7d1-4637-9893-0682b2c9e670" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/kak.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbconfig.php" beforeDir="false" afterPath="$PROJECT_DIR$/dbconfig.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/after.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/after.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/activation.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/activation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/deleteActivation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/config.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603051138681</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Cleanup, Removed deleteActivation.php">
+      <created>1603071061659</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1603071061659</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +247,8 @@
     <MESSAGE value="Loads of fixes" />
     <MESSAGE value="Format date, remove confirm, fix notifs" />
     <MESSAGE value="removed todo's" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed todo's" />
+    <MESSAGE value="Cleanup, Removed deleteActivation.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleanup, Removed deleteActivation.php" />
   </component>
   <component name="WindowStateProjectService">
     <state x="475" y="55" key="#PHP" timestamp="1600773724118">
@@ -280,10 +284,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="516" y="272" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.834@0.0.1536.834" timestamp="1602958762196" />
-    <state x="383" y="4" key="CommitChangelistDialog2" timestamp="1603051138074">
+    <state x="383" y="4" key="CommitChangelistDialog2" timestamp="1603071060923">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="383" y="4" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1603051138074" />
+    <state x="383" y="4" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1603071060923" />
     <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1601372147082">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -338,10 +342,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1602175434739" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1603051140092">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1603071064631">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1603051140092" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1603071064631" />
     <state x="668" y="357" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1603035693190">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -381,10 +385,10 @@
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1601919769475" />
     <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1603037506989" />
-    <state x="431" y="147" width="672" height="687" key="search.everywhere.popup" timestamp="1603066601501">
+    <state x="431" y="147" width="672" height="687" key="search.everywhere.popup" timestamp="1603143133660">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1601924823828" />
-    <state x="431" y="147" width="672" height="687" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1603066601501" />
+    <state x="431" y="147" width="672" height="687" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1603143133660" />
   </component>
 </project>
