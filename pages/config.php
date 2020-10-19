@@ -5,7 +5,7 @@
 
 include_once("dbconfig.php");
 
-$id = $name = $audio = $visual = $threshold = $alert_repeat = $sound_frequency = $sound_length = $visual_color = null;
+$id = $name = $new_id = $audio = $visual = $threshold = $alert_repeat = $sound_frequency = $sound_length = $visual_color = null;
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -14,6 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['update'])) {
 
         if (isset($_POST['name'])) { $name = $_POST['name']; }
+        if (isset($_POST['new_id'])) { $new_id = $_POST['new_id']; }
         if (isset($_POST['audio'])) { $audio = 1; } else { $audio = 0; }
         if (isset($_POST['visual'])) { $visual = 1; } else { $visual = 0; }
         if (isset($_POST['threshold'])) {$threshold = $_POST['threshold'];}
@@ -22,10 +23,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (isset($_POST['sound_length'])) {$sound_length = $_POST['sound_length'];}
         if (isset($_POST['visual_color'])) {$visual_color = hexdec($_POST['visual_color']);}
 
-        if (doPDOSend("UPDATE config SET name = :new_name, audio = :new_audio, visual = :new_visual, 
+        if (doPDOSend("UPDATE config SET id = :new_id, name = :new_name, audio = :new_audio, visual = :new_visual, 
                         threshold = :new_threshold, alert_repeat = :new_alert_repeat, sound_frequency = :new_sound_frequency, 
                         sound_length = :new_sound_length, visual_color = :new_visual_color WHERE id = :old_id", $db,
-            array(':new_name' => $name, ':new_audio' => $audio, 'new_visual' => $visual, 'new_threshold' => $threshold,
+            array(':new_id' => $new_id, ':new_name' => $name, ':new_audio' => $audio, 'new_visual' => $visual, 'new_threshold' => $threshold,
                 ':new_alert_repeat' => $alert_repeat, ':new_sound_frequency' => $sound_frequency,
                 ':new_sound_length' => $sound_length, ':new_visual_color' => $visual_color, ':old_id' => $id))) {
             echo("<div id='notice'>Successfully updated $name</div>");
@@ -65,8 +66,8 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
             <input type='text' id='name' name='name' value='{$row['name']}'>
          </div>
          <div class='field'>
-            <label for='id'>RetroBit ID</label>
-            <input type='number' min='1' step='1' name='id' id='id' value='{$row["id"]}'> 
+            <label for='new_id'>RetroBit ID</label>
+            <input type='number' min='1' step='1' name='new_id' id='new_id' value='{$row["id"]}'> 
          </div>      
          <div class='field'>
             <label for='audio'>Audio alert</label>
