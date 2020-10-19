@@ -2,7 +2,7 @@
 
     // Details tag animation handler listener
     document.querySelectorAll("details summary").forEach(elem => {
-        elem.addEventListener("click", function() {animateSpoiler(elem)});
+        elem.addEventListener("click", function() { animateSpoiler(elem) });
     });
 
     document.querySelectorAll("#notice").forEach(elem => {

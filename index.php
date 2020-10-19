@@ -3,7 +3,7 @@
 
 <?php
 
-$pagesToAutoRefresh = array("home", "activations");
+$AJAXPages = array("home", "activations");
 
 include_once("dbconfig.php");
 
@@ -23,12 +23,12 @@ if ($page == "home") {
 
 <div id="page" class="<?php echo($page) ?>">
 
-    <?php if ($page && !in_array($page, $pagesToAutoRefresh)) { include("pages/" . $page . ".php"); } ?>
+    <?php if (!in_array($page, $AJAXPages)) { include("pages/" . $page . ".php"); } ?>
 
 </div>
 
 <script>
-    <?php if (in_array($page, $pagesToAutoRefresh)) { ?>
+    <?php if (in_array($page, $AJAXPages)) { ?>
         getPage();
         refreshInterval = setInterval(getPage, 2000);
     <?php } ?>

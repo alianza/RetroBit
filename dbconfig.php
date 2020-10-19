@@ -49,7 +49,7 @@ function displayActivation($row) {
         <div>
             <span><strong>$name</strong></span>
             <br>
-            <span>At: $time</span>
+            <span>$time</span>
         </div>
         <div>    
             <img alt='Visual' title='Visual indication' src='img/icons/" . ($audio == 1 ? 'volume' : 'mute') . ".png'>

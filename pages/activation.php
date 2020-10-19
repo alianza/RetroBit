@@ -4,7 +4,21 @@
 
     $id = $time = $sample = $audio = $visual = $retrobitId = $sound_frequency = $sound_length = $visual_color = $name = null;
 
-    if (isset($_GET['id']) && $_GET['id'] != '') {
+    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete'])) {
+
+        if (isset($_POST['id'])) {
+
+            $id = $_POST['id'];
+
+            if (doPDOSend("DELETE FROM activation WHERE id = :id", $db, array(':id' => $id))) {
+                echo("<div id='notice'>Activation with id: $id successfully deleted</div>");
+                echo("<a href='index.php'>Back home</a>");
+            } else {
+                echo("<div id='notice'>Activation with id: $id was NOT deleted</div>");
+            }
+        }
+
+    } else if (isset($_GET['id']) && $_GET['id'] != '') {
         $id = $_GET['id'];
 
         try {
@@ -29,7 +43,7 @@
             echo("<h2>Activation at: $time</h2>");
 
             echo(" 
-     <form class='card' onsubmit='return confirm(\"Are you sure you want to remove activation $name #$id\");' action='index.php?page=deleteActivation&id=$id' method='post'>
+     <form class='card' onsubmit='return confirm(\"Are you sure you want to remove activation $name #$id\");' method='post'>
     
                 <h3>$name #$id</h3>
                 <span id='time'>Time: $time</span>
@@ -42,6 +56,7 @@
                 <label for='visual_color'>Visual Color: 
                 <input type='color' disabled id='visual_color' value='" . getColorFromInt($visual_color) ."'/>
                 </label>
+                <input type='hidden' id='id' name='id' value='$id'>
                 <input type='submit' name='delete' value='Remove'>
         </form>");
 
