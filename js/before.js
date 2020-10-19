@@ -13,7 +13,10 @@ function checkForCurrentActivations() {
                         if (messageContent !== "") {
                             messageContent += ", "
                         }
-                        messageContent += $("span", this).text();
+                        $("span", this).each(function (index) {
+                            (index === 1 ? messageContent += " " : null);
+                            messageContent += $(this).text();
+                        })
                     });
                 } else {
                     return;

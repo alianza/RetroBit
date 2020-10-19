@@ -24,8 +24,7 @@
   <component name="ChangeListManager">
     <list default="true" id="129d0686-e7d1-4637-9893-0682b2c9e670" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/before.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/before.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603071061659</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added retrobit id to pages/config.php">
+      <created>1603143301015</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1603143301015</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,7 +254,8 @@
     <MESSAGE value="Format date, remove confirm, fix notifs" />
     <MESSAGE value="removed todo's" />
     <MESSAGE value="Cleanup, Removed deleteActivation.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleanup, Removed deleteActivation.php" />
+    <MESSAGE value="Added retrobit id to pages/config.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added retrobit id to pages/config.php" />
   </component>
   <component name="WindowStateProjectService">
     <state x="475" y="55" key="#PHP" timestamp="1600773724118">
@@ -284,10 +291,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="516" y="272" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.834@0.0.1536.834" timestamp="1602958762196" />
-    <state x="383" y="4" key="CommitChangelistDialog2" timestamp="1603071060923">
+    <state x="383" y="4" key="CommitChangelistDialog2" timestamp="1603143300516">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="383" y="4" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1603071060923" />
+    <state x="383" y="4" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1603143300516" />
     <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1601372147082">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -342,10 +349,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1602175434739" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1603071064631">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1603143302654">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1603071064631" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1603143302654" />
     <state x="668" y="357" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1603035693190">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
