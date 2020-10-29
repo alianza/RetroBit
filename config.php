@@ -8,7 +8,11 @@ if (isset($_GET['retrobitId']) && $_GET['retrobitId'] != '') {
 
     $result = doPDOGet("SELECT * FROM config WHERE id = :id",$db ,array(':id' => $retrobitId));
 
-    echo json_encode($result);
+    if (!empty($result)) {
+        echo json_encode($result);
+    } else {
+        http_response_code(204);
+    }
 
 } else {
 
