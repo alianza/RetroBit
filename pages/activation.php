@@ -110,3 +110,8 @@
         <dd>The color of the visual cue</dd>
     </dl>
 </form>
+
+<form action="index.php" method='get' enctype='multipart/form-data'>
+    <input type="submit" class="fab material-icons" value="settings">
+    <input type="hidden" name="page" value="config">
+</form>

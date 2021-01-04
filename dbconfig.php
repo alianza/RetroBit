@@ -34,6 +34,8 @@ function doPDOGetStmt(string $query,PDO $db, array $array = null) : PDOStatement
 }
 
 /**
+ * Echo's a Generic Card element (activation)
+ *
  * @param $row
  */
 function displayActivation($row) {
@@ -60,6 +62,11 @@ function displayActivation($row) {
         </form>");
 }
 
+/**
+ * Takes a integer and converts it to a HEX color
+ * @param $number
+ * @return string
+ */
 function getColorFromInt($number) {
     return ("#".substr("000000".dechex($number),-6));
 }
